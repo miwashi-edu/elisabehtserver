@@ -12,9 +12,18 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.1"
+    "express": "^4.18.1",
+    "uuid": "^9.0.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.19"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miwashi-edu/elisabehtserver.git"
+  },
+  "bugs": {
+    "url": "https://github.com/miwashi-edu/elisabehtserver/issues"
+  },
+  "homepage": "https://github.com/miwashi-edu/elisabehtserver#readme"
 }
