@@ -5,10 +5,12 @@ routes.get('/', userController.get_all_users)
 
 routes.get('/:id', userController.get_user)
 
-routes.put('/update:id', userController.put_user)
+routes.put('/update/:id', userController.put_user)
 
 routes.post('/post', userController.post_user)
 
-routes.delete('/remove:id', userController.delete_user)
+routes.delete('/remove/:id', userController.delete_user)
+
+//routes.delete('/removeall', userController.delete_all)
 
 module.exports = routes

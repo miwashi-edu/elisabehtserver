@@ -35,9 +35,12 @@ exports.put_user = (req, res) => {
 
 
 exports.delete_user = (req, res) => {
-    users = users.filter((user)=> user.id !== req.params.id)//returnerar all userid som inte matchar
-    res.send('user deleted')
+    const index = users.findIndex(user => user.id === req.params.id)
+    res.send(users.splice(index, 1)) 
 }
+
+
+
 
 /*const user = []
 
